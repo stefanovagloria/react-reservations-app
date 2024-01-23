@@ -2,6 +2,11 @@
     display: flex;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .menu a{
     padding: 1em;
+    text-decoration: none;
 }
