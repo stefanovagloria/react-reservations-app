@@ -3,6 +3,6 @@ import styles from './Gallery.module.css';
 export default function Gallery(){
 
     return(
-        <div>Gallery Page</div>
+        <h1>Gallery Page</h1>
     )
 }

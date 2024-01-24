@@ -2,11 +2,20 @@
     display: flex;
 }
 
+.container div{
+   padding: 40px;
+}
+
 .logo a{
     text-decoration: none;
 }
 
 .menu a{
+    padding: 1em;
+    text-decoration: none;
+}
+
+.auth a{
     padding: 1em;
     text-decoration: none;
 }

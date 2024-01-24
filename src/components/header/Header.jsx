@@ -14,6 +14,10 @@ export default function Header() {
         <Link to="/gallery">GALLERY</Link>
         <Link to="/contacts">CONTACTS</Link>
       </div>
+      <div className={styles.auth}>
+        <Link to="/login">LOGIN</Link>
+        <Link to="/register">REGISTER</Link>
+      </div>
     </nav>
   );
 }

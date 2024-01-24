@@ -3,6 +3,6 @@ import styles from './Home.module.css';
 export default function Home(){
 
     return(
-        <div>Home Page</div>
+        <h1>Home Page</h1>
     )
 }
