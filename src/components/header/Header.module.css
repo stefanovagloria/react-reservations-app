@@ -8,14 +8,17 @@
 
 .logo a{
     text-decoration: none;
+    color: black;
 }
 
 .menu a{
     padding: 1em;
     text-decoration: none;
+    color: black;
 }
 
 .auth a{
     padding: 1em;
     text-decoration: none;
+    color: black;
 }
