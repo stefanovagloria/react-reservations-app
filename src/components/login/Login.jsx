@@ -1,8 +1,20 @@
+import { useForm } from "../../hooks/useForm";
 import styles from "./Login.module.css";
 
 export default function Login() {
+  const {values, onChangeHandler, onSubmit} = useForm(
+    {
+      email: "",
+      password: "",
+    },
+    onSubmitHandler
+  );
+
+  async function onSubmitHandler(values) {
+    console.log(values);
+  }
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <div className={styles.container}>
         <h1>Login</h1>
 
@@ -14,6 +26,8 @@ export default function Login() {
           placeholder="Enter Email"
           name="email"
           id="email"
+          value={values.email}
+          onChange={onChangeHandler}
           required
         ></input>
 
@@ -23,19 +37,15 @@ export default function Login() {
         <input
           type="password"
           placeholder="Enter Password"
-          name="psw"
+          name="password"
           id="psw"
+          value={values.password}
+          onChange={onChangeHandler}
           required
         ></input>
         <button type="submit" className={styles.registerbtn}>
           Login
         </button>
-      </div>
-
-      <div className="container signin">
-        <p>
-          Already have an account? <a href="#">Sign in</a>.
-        </p>
       </div>
     </form>
   );

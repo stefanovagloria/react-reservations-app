@@ -1,25 +1,23 @@
 import { useState } from "react";
+import { useForm } from "../../hooks/useForm";
 import styles from "./Register.module.css";
 
 export default function Register() {
-  const [values, setValues] = useState({
-    email: "",
-    password: "",
-    rePassword: "",
-  });
+  const { values, onChangeHandler, onSubmit } = useForm(
+    {
+      email: "",
+      password: "",
+      rePassword: "",
+    },
+    onSubmitHandler
+  );
 
-  const onChangeHandler = (e) => {
-    setValues(values => ({...values, [e.target.name]: e.target.value }))
-  };
-
-  const onSubmitHandler = (e) =>{
-    e.preventDefault();
-
-    // api call register
+  async function onSubmitHandler(values) {
+    console.log(values);
   }
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form onSubmit={onSubmit}>
       <div className={styles.container}>
         <h1>Register</h1>
 
