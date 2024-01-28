@@ -1,5 +1,8 @@
 .container{
-    display: flex;
+display: flex;
+   flex-direction: column;
+   width: 200px;
+   padding-left: 200px;
 }
 
 .container div{
@@ -15,10 +18,14 @@
     padding: 1em;
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .auth a{
     padding: 1em;
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
