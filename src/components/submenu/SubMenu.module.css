@@ -1,10 +1,12 @@
 .container{
     display: flex;
     flex-direction: row;
+    padding: 1em;
 }
 
 .container div{
     text-align: center;
     padding: 0 3em;
     margin-bottom: 1em;
+    color: rgb(41, 41, 109);
 }
