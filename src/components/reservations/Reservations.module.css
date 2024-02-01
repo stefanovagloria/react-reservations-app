@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 5em 7em;
+ 
+}
+
+.img img{
+   width: 100%;
+}
+
+.bookingForm{
+    background-color: #eff0c6;
+    margin:-50px 0px;
+    padding: 3em 5em;
+}
+
+.labels {
+    padding: 5px;
+}
