@@ -1,17 +1,21 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const useForm = (initialValues, onSubmitHandler) => {
 
     const [values, setValues] = useState(initialValues);
+    const navigate = useNavigate()
 
     const onChangeHandler = (e) => {
         setValues(values => ({ ...values, [e.target.name]: e.target.value }))
     }
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
 
-        onSubmitHandler(values);
+        await onSubmitHandler(values);
+        setValues(values => ({...initialValues}));
+        navigate('/');
     }
 
     return {

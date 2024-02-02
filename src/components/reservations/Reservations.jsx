@@ -16,7 +16,7 @@ export default function Reservations() {
     onSubmitHandler
   );
 
-  function onSubmitHandler(e) {
+  async function onSubmitHandler(e) {
     console.log("Sending request..");
     // send post request to db
   }
