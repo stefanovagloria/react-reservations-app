@@ -1,20 +1,39 @@
 .container {
     display: flex;
     flex-direction: row;
-    padding: 5em 7em;
+    padding: 5em 9em;
  
 }
 
 .img img{
    width: 100%;
+   overflow: visible;
+   border-bottom-left-radius: 3em;
+   border-top-left-radius: 3em;
+
 }
 
 .bookingForm{
+    width: 90%;
     background-color: #eff0c6;
     margin:-50px 0px;
-    padding: 3em 5em;
+    padding: 2em 5em;
+    border-radius: 3em;
 }
 
 .labels {
-    padding: 5px;
+    padding: 15px 5px;
+}
+
+.sendBtn{
+    width: 25%;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+.sendBtn:hover{
+    font-weight: bold;
 }
