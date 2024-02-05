@@ -11,6 +11,7 @@ import City from "./components/city/City";
 import Reservations from "./components/reservations/Reservations";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import GuestHouse from "./components/guest-house/GuestHouse";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/city" element={<City/>}/>
+        <Route path="/guest-house" element={<GuestHouse/>}/>
         <Route path="/reservations" element={<Reservations/>}/>
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contacts" element={<Contacts />} />
